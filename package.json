@@ -2,7 +2,7 @@
   "name": "infra-agent-api",
   "version": "1.0.0",
   "engines": {
-    "node": "22.12.0"
+    "node": "22.20.0"
   },
   "type": "commonjs",
   "main": "index.js",
