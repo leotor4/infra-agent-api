@@ -5,6 +5,9 @@ const prisma = new PrismaClient();
 
 export const getNextJob = async (req: Request, res: Response) => {
   const lastJob = await prisma.job.findFirst({
+    where: {
+      doneAt: null
+    },
     orderBy: {
       createdAt: "desc",
     },
