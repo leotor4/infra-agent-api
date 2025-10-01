@@ -4,6 +4,16 @@ meta {
   seq: 1
 }
 
-get {
-  url: 
+post {
+  url: http://localhost:3000
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "project": "REDESIM",
+    "version": "1.1.1",
+    "createdBy": "Gilmas"
+  }
 }
